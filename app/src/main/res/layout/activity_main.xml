@@ -11,12 +11,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.main.MainActivity">
+        tools:context=".view.main.MainActivity"
+        android:background="?attr/backgroundColor">
 
         <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerMain"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:adapter="@{activity.}"
             app:layout_constraintBottom_toTopOf="@id/bottomNavigationHomeMain"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,9 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:itemBackground="@color/background_600"
-            app:itemIconTint="@color/primary_600"
-            app:itemTextColor="@color/primary_600"
+            app:itemBackground="?attr/boxBackgroundColor"
+            app:itemIconTint="?attr/colorPrimary"
+            app:itemTextColor="?attr/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
